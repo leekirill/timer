@@ -1,0 +1,2 @@
+*{font-family:Arial,Helvetica,sans-serif}body{background:#ebebeb}.container{position:relative;top:50%;transform:translateY(-50%)}.timer{justify-content:center;padding:10px;display:flex;position:relative}.field{width:100px;height:100px;background:#ffffff80;border-radius:8px;flex-direction:column;justify-content:center;align-items:center;margin-right:18px;display:flex}.field:last-child{margin-right:0}.value{font-size:40px}.label{text-align:center;opacity:.4}
+/*# sourceMappingURL=index.81b3843b.css.map */
