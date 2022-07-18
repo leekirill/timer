@@ -2,10 +2,11 @@
   "name": "timer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url /timer/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,11 @@
   "bugs": {
     "url": "https://github.com/leekirill/timer/issues"
   },
-  "homepage": "https://github.com/leekirill/timer#readme",
+  "homepage": "https://leekirill.github.io/timer",
   "devDependencies": {
     "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
