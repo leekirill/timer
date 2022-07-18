@@ -2,6 +2,8 @@ class CountdownTimer {
   constructor({ selector, targetDate }) {
     this.selector = selector;
     this.targetDate = targetDate;
+    this.start();
+    this.updateTimer(this.getTimeComponents(targetDate - Date.now()));
   }
 
   updateTimer({ days, hours, mins, secs }) {
@@ -22,10 +24,10 @@ class CountdownTimer {
       const targetDate = this.targetDate;
       const deltaTime = targetDate - Date.now();
       const timeComponents = this.getTimeComponents(deltaTime);
-
       this.updateTimer(timeComponents);
     }, 1000);
   }
+
   getTimeComponents(time) {
     const days = this.pad(Math.floor(time / (1000 * 60 * 60 * 24)));
     const hours = this.pad(
@@ -43,7 +45,15 @@ class CountdownTimer {
 
 const timer1 = new CountdownTimer({
   selector: "#timer-1",
-  targetDate: new Date("Oct 16, 2022"),
+  targetDate: new Date("Junary 2, 2024"),
 });
 
-timer1.start();
+const timer2 = new CountdownTimer({
+  selector: "#timer-2",
+  targetDate: new Date("October 16, 2022"),
+});
+
+const timer3 = new CountdownTimer({
+  selector: "#timer-3",
+  targetDate: new Date("Jan 1, 2023"),
+});

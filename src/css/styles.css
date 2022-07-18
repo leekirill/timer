@@ -1,0 +1,41 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ebebeb;
+}
+.container {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.timer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* top: 50%;
+    transform: translate(0, -50%); */
+    padding: 10px
+}
+.field {
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background: rgba(255,255,255,.5);
+}
+.field:last-child {
+    margin-right: 0;
+}
+.value {
+    font-size: 40px;
+}
+.label {
+    text-align: center;
+    opacity: .4;
+}
